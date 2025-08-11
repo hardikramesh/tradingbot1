@@ -15,7 +15,7 @@ api = tradeapi.REST(ALPACA_KEY, ALPACA_SECRET, BASE_URL, api_version='v2')
 def webhook():
     data = request.json
     action = data.get("alert", "").upper()
-    symbol = data.get("symbol", "AAPL")  # default if missing
+    symbol = data.get("symbol", "GOLD")  # default if missing
 
     if action == "BUY":
         api.submit_order(
