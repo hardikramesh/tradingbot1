@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     g++ \
     make \
     libffi-dev \
+    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
