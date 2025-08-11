@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Replace with your real API keys from Alpaca dashboard
 ALPACA_KEY = os.getenv("ALPACA_API_KEY")
 ALPACA_SECRET = os.getenv("ALPACA_API_SECRET")
-BASE_URL = "https://paper-api.alpaca.markets/v2"  # Use paper trading endpoint
+BASE_URL = "https://paper-api.alpaca.markets/"  # Use paper trading endpoint
 
 api = tradeapi.REST(ALPACA_KEY, ALPACA_SECRET, BASE_URL, api_version='v2')
 
